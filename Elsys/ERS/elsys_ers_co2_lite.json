@@ -1,0 +1,123 @@
+{
+    "Elsys ERS CO₂ Lite": {
+        "custom": false,
+        "vendor": "Elsys",
+        "model": "ERS CO₂ Lite",
+        "translation": {
+            "de": "Elsys ERS CO₂ Lite Sensor für die Luftqualität in Innenräumen",
+            "en": "Elsys ERS CO₂ Lite Indoor Air Quality Sensor",
+            "fr": "Elsys ERS CO₂ Lite Capteur de qualité de l'air intérieur",
+            "it": "Elsys ERS CO₂ Lite Sensore di qualità dell'aria interna"
+        },
+        "urldoc": "https://www.elsys.se/en/ers-co2-lite/",
+        "allowedInactivity": null,
+        "icon": "environment",
+        "attributes": [
+            {
+                "temperature": {
+                    "attributeType": "temperature",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Temperatur",
+                        "en": "Temperature",
+                        "fr": "Température",
+                        "it": "Temperatura"
+                    },
+                    "isDigital": false,
+                    "unit": "°C",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "humidity": {
+                    "attributeType": "humidity",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Luftfeuchtigkeit",
+                        "en": "Humidity",
+                        "fr": "Humidité",
+                        "it": "Umidità"
+                    },
+                    "isDigital": false,
+                    "unit": "%",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "co2": {
+                    "attributeType": "co2",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "CO₂",
+                        "en": "CO₂",
+                        "fr": "CO₂",
+                        "it": "CO₂"
+                    },
+                    "isDigital": false,
+                    "unit": "ppm",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "battery_voltage": {
+                    "attributeType": "battery-voltage",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Batteriespannung",
+                        "en": "Battery Voltage",
+                        "fr": "Voltage de la batterie",
+                        "it": "Tensione della batteria"
+                    },
+                    "isDigital": false,
+                    "unit": "V",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false,
+                    "formula": "battery_voltage / 1000"
+                }
+            }
+        ]
+    }
+ }

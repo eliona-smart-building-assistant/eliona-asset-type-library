@@ -1,0 +1,175 @@
+{
+    "Elsys ERS VOC": {
+        "custom": false,
+        "vendor": "Elsys",
+        "model": "ERS VOC",
+        "translation": {
+            "de": "Elsys ERS VOC Sensor für die Luftqualität in Innenräumen",
+            "en": "Elsys ERS VOC Indoor Air Quality Sensor",
+            "fr": "Elsys ERS VOC Capteur de qualité de l'air intérieur",
+            "it": "Elsys ERS VOC Sensore di qualità dell'aria interna"
+        },
+        "urldoc": "https://www.elsys.se/en/ers-voc/",
+        "allowedInactivity": null,
+        "icon": "environment",
+        "attributes": [
+            {
+                "temperature": {
+                    "attributeType": "temperature",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Temperatur",
+                        "en": "Temperature",
+                        "fr": "Température",
+                        "it": "Temperatura"
+                    },
+                    "isDigital": false,
+                    "unit": "°C",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "humidity": {
+                    "attributeType": "humidity",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Luftfeuchtigkeit",
+                        "en": "Humidity",
+                        "fr": "Humidité",
+                        "it": "Umidità"
+                    },
+                    "isDigital": false,
+                    "unit": "%",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "brightness": {
+                    "attributeType": "brightness",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Helligkeit",
+                        "en": "Brightness",
+                        "fr": "Luminosité",
+                        "it": "Luminosità"
+                    },
+                    "isDigital": false,
+                    "unit": "Lux",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "motion_count": {
+                    "attributeType": "presence",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Zähler für Bewegungsereignisse",
+                        "en": "Motion event counter",
+                        "fr": "Compteur d'événements de mouvement",
+                        "it": "Contatore di eventi di movimento"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "voc": {
+                    "attributeType": "air_quality",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Flüchtige organische verbindungen",
+                        "en": "Volatile organic compounds",
+                        "fr": "Composés organiques volatils",
+                        "it": "Composti organici volatili"
+                    },
+                    "isDigital": false,
+                    "unit": "ppb",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "battery_voltage": {
+                    "attributeType": "battery-voltage",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Batteriespannung",
+                        "en": "Battery Voltage",
+                        "fr": "Voltage de la batterie",
+                        "it": "Tensione della batteria"
+                        },
+                    "isDigital": false,
+                    "unit": "V",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false,
+                    "formula": "battery_voltage / 1000"
+                }
+            }
+        ]
+    }
+}

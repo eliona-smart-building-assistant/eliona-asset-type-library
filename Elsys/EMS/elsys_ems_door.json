@@ -1,0 +1,204 @@
+{
+    "Elsys EMS Door": {
+        "custom": false,
+        "vendor": "Elsys",
+        "model": "EMS Door",
+        "translation": {
+            "de": "Elsys EMS Door Wasserleck-Detektor",
+            "en": "Elsys EMS Door Water leak detector",
+            "fr": "Elsys EMS Door Détecteur de fuites d'eau",
+            "it": "Elsys EMS Door Rilevatore di perdite d'acqua"
+        },
+        "urldoc": "https://www.elsys.se/en/ems-door/",
+        "allowedInactivity": null,
+        "icon": "environment",
+        "attributes": [
+            {
+                "acceleration_x": {
+                    "attributeType": "device-status",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Beschleunigung (x-Achse)",
+                        "en": "Acceleraion (x-axis)",
+                        "fr": "Accélération (axe des x)",
+                        "it": "Accelerazione (asse x)"
+                    },
+                    "isDigital": false,
+                    "unit": "G",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "formula": "((({accel_x} + 127) * 4) / 254) - 2",
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "acceleration_y": {
+                    "attributeType": "device-status",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Beschleunigung (y-Achse)",
+                        "en": "Acceleraion (y-axis)",
+                        "fr": "Accélération (axe des y)",
+                        "it": "Accelerazione (asse y)"
+                    },
+                    "isDigital": false,
+                    "unit": "G",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "formula": "((({accel_y} + 127) * 4) / 254) - 2",
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "acceleration_z": {
+                    "attributeType": "device-status",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Beschleunigung (z-Achse)",
+                        "en": "Acceleraion (z-axis)",
+                        "fr": "Accélération (axe des z)",
+                        "it": "Accelerazione (asse z)"
+                    },
+                    "isDigital": false,
+                    "unit": "G",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "formula": "((({accel_z} + 127) * 4) / 254) - 2",
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "battery_voltage": {
+                    "attributeType": "battery-voltage",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Batteriespannung",
+                        "en": "Battery Voltage",
+                        "fr": "Voltage de la batterie",
+                        "it": "Tensione della batteria"
+                    },
+                    "isDigital": false,
+                    "unit": "V",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false,
+                    "formula": "battery_voltage / 1000"
+                }
+            },
+            {
+                "pulse_count_relative_01": {
+                    "attributeType": "operating-status",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Impulszahl (zwischen zwei Sendeintervallen)",
+                        "en": "Pulse count (Between two send intervals)",
+                        "fr": "Comptage d'impulsions (entre deux intervalles d'envoi)",
+                        "it": "Conteggio degli impulsi (tra due intervalli di invio)"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "pulse_count_abs_01": {
+                    "attributeType": "operating-status",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Impulszahl (absolut)",
+                        "en": "Pulse count (absolute)",
+                        "fr": "Comptage d'impulsions (absolu)",
+                        "it": "Conteggio degli impulsi (assoluto)"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "digital_input": {
+                    "attributeType": "inputs-and-switches",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Digitaler Eingang",
+                        "en": "Digital input",
+                        "fr": "Entrée numérique",
+                        "it": "Ingresso digitale"
+                    },
+                    "isDigital": true,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            }
+        ]
+    }
+}

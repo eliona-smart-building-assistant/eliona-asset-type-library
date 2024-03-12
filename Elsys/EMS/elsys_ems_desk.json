@@ -1,0 +1,208 @@
+{
+    "Elsys EMS Desk": {
+        "custom": false,
+        "vendor": "Elsys",
+        "model": "EMS Desk",
+        "translation": {
+            "de": "Elsys EMS Desk Schreibtisch-Belegungssensor",
+            "en": "Elsys EMS Desk Occupancy Sensor",
+            "fr": "Elsys EMS Desk Détecteur d'occupation de bureau",
+            "it": "Elsys EMS Desk Sensore di occupazione della scrivania"
+        },
+        "urldoc": "https://www.elsys.se/en/ems-desk/",
+        "allowedInactivity": null,
+        "icon": "environment",
+        "attributes": [
+            {
+                "temperature": {
+                    "attributeType": "temperature",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Temperatur",
+                        "en": "Temperature",
+                        "fr": "Température",
+                        "it": "Temperatura"
+                    },
+                    "isDigital": false,
+                    "unit": "°C",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "humidity": {
+                    "attributeType": "humidity",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Luftfeuchtigkeit",
+                        "en": "Humidity",
+                        "fr": "Humidité",
+                        "it": "Umidità"
+                    },
+                    "isDigital": false,
+                    "unit": "%",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "occupancy": {
+                    "attributeType": "presence",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Belegung",
+                        "en": "Presence",
+                        "fr": "Occupation",
+                        "it": "Occupazione"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": [
+                        {"value":0, "map":"Unoccupied"},
+                        {"value":1, "map":"Pending"},
+                        {"value":2, "map":"Occupied"}
+                    ],
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "battery_voltage": {
+                    "attributeType": "battery-voltage",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Batteriespannung",
+                        "en": "Battery Voltage",
+                        "fr": "Voltage de la batterie",
+                        "it": "Tensione della batteria"
+                    },
+                    "isDigital": false,
+                    "unit": "V",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false,
+                    "formula": "battery_voltage / 1000"
+                }
+            },
+            {
+                "acceleration_x": {
+                    "attributeType": "device-status",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Beschleunigung (x-Achse)",
+                        "en": "Acceleraion (x-axis)",
+                        "fr": "Accélération (axe des x)",
+                        "it": "Accelerazione (asse x)"
+                    },
+                    "isDigital": false,
+                    "unit": "G",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "formula": "((({accel_x} + 127) * 4) / 254) - 2",
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "acceleration_y": {
+                    "attributeType": "device-status",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Beschleunigung (y-Achse)",
+                        "en": "Acceleraion (y-axis)",
+                        "fr": "Accélération (axe des y)",
+                        "it": "Accelerazione (asse y)"
+                    },
+                    "isDigital": false,
+                    "unit": "G",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "formula": "((({accel_y} + 127) * 4) / 254) - 2",
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "acceleration_z": {
+                    "attributeType": "device-status",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Beschleunigung (z-Achse)",
+                        "en": "Acceleraion (z-axis)",
+                        "fr": "Accélération (axe des z)",
+                        "it": "Accelerazione (asse z)"
+                    },
+                    "isDigital": false,
+                    "unit": "G",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "formula": "((({accel_z} + 127) * 4) / 254) - 2",
+                    "viewer": false,
+                    "ar": false
+                }
+            }
+        ]
+    }
+ }
