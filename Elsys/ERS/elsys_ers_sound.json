@@ -1,0 +1,201 @@
+{
+    "Elsys Sound": {
+        "custom": false,
+        "vendor": "Elsys",
+        "model": "ERS Sound",
+        "translation": {
+            "de": "Elsys ERS Sound Raumklima- und Schallpegelsensor",
+            "en": "Elsys ERS Sound Indoor Climate and Sound Level Sensor",
+            "fr": "Elsys ERS Sound Capteur de climat intérieur et de niveau sonore",
+            "it": "Elsys ERS Sound Sensore di clima interno e di livello sonoro"
+        },
+        "urldoc": "https://www.elsys.se/en/ers-sound/",
+        "allowedInactivity": null,
+        "icon": "environment",
+        "attributes": [
+            {
+                "temperature": {
+                    "attributeType": "temperature",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Temperatur",
+                        "en": "Temperature",
+                        "fr": "Température",
+                        "it": "Temperatura"
+                    },
+                    "isDigital": false,
+                    "unit": "°C",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "humidity": {
+                    "attributeType": "humidity",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Luftfeuchtigkeit",
+                        "en": "Humidity",
+                        "fr": "Humidité",
+                        "it": "Umidità"
+                    },
+                    "isDigital": false,
+                    "unit": "%",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "brightness": {
+                    "attributeType": "brightness",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Helligkeit",
+                        "en": "Brightness",
+                        "fr": "Luminosité",
+                        "it": "Luminosità"
+                    },
+                    "isDigital": false,
+                    "unit": "Lux",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "motion_count": {
+                    "attributeType": "presence",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Zähler für Bewegungsereignisse",
+                        "en": "Motion event counter",
+                        "fr": "Compteur d'événements de mouvement",
+                        "it": "Contatore di eventi di movimento"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "battery_voltage": {
+                    "attributeType": "battery-voltage",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Batteriespannung",
+                        "en": "Battery Voltage",
+                        "fr": "Voltage de la batterie",
+                        "it": "Tensione della batteria"
+                    },
+                    "isDigital": false,
+                    "unit": "V",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false,
+                    "formula": "battery_voltage / 1000"
+                }
+            },
+            {
+                "sound_intensity_peak": {
+                    "attributeType": "pressure",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Schallintensität (Spitze)",
+                        "en": "Sound intensity (peak)",
+                        "fr": "Intensité sonore (crête)",
+                        "it": "Intensità sonora (picco)"
+                    },
+                    "isDigital": false,
+                    "unit": "dB",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "sound_intensity_avg": {
+                    "attributeType": "pressure",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Schallintensität (Durchschnitt)",
+                        "en": "Sound intensity (average)",
+                        "fr": "Intensité sonore (moyenne)",
+                        "it": "Intensità sonora (media)"
+                    },
+                    "isDigital": false,
+                    "unit": "dB",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            }
+        ]
+    }
+}

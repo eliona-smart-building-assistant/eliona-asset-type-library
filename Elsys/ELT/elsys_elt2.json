@@ -1,0 +1,436 @@
+{
+    "Elsys ELT-2": {
+        "custom": false,
+        "vendor": "Elsys",
+        "model": "ELT-2",
+        "translation": {
+            "de": "Elsys ELT-2 Multi-Sensor",
+            "en": "Elsys ELT-2 Water leak detector",
+            "fr": "Elsys ELT-2 Capteur multiple",
+            "it": "Elsys ELT-2 Sensore multiplo"
+        },
+        "urldoc": "https://www.elsys.se/en/lora-elt-2/",
+        "allowedInactivity": null,
+        "icon": "environment",
+        "attributes": [
+            {
+                "battery_voltage": {
+                    "attributeType": "battery-voltage",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Batteriespannung",
+                        "en": "Battery Voltage",
+                        "fr": "Voltage de la batterie",
+                        "it": "Tensione della batteria"
+                    },
+                    "isDigital": false,
+                    "unit": "V",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false,
+                    "formula": "battery_voltage / 1000"
+                }
+            },
+            {
+                "temperature": {
+                    "attributeType": "temperature",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Temperatur",
+                        "en": "Temperature",
+                        "fr": "Température",
+                        "it": "Temperatura"
+                    },
+                    "isDigital": false,
+                    "unit": "°C",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "humidity": {
+                    "attributeType": "humidity",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Luftfeuchtigkeit",
+                        "en": "Humidity",
+                        "fr": "Humidité",
+                        "it": "Umidità"
+                    },
+                    "isDigital": false,
+                    "unit": "%",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "pulse_count_relative_01": {
+                    "attributeType": "operating-status",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Impulszahl (zwischen zwei Sendeintervallen) 01",
+                        "en": "Pulse count (Between two send intervals) 01",
+                        "fr": "Comptage d'impulsions (entre deux intervalles d'envoi) 01",
+                        "it": "Conteggio degli impulsi (tra due intervalli di invio) 01"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },           
+            {
+                "pulse_count_relative_02": {
+                    "attributeType": "operating-status",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Impulszahl (zwischen zwei Sendeintervallen) 02",
+                        "en": "Pulse count (Between two send intervals) 02",
+                        "fr": "Comptage d'impulsions (entre deux intervalles d'envoi) 02",
+                        "it": "Conteggio degli impulsi (tra due intervalli di invio) 02"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "pulse_count_abs_01": {
+                    "attributeType": "operating-status",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Impulszahl (absolut) 01",
+                        "en": "Pulse count (absolute) 01",
+                        "fr": "Comptage d'impulsions (absolu) 01",
+                        "it": "Conteggio degli impulsi (assoluto) 01"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "pulse_count_abs_02": {
+                    "attributeType": "operating-status",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Impulszahl (absolut) 02",
+                        "en": "Pulse count (absolute) 02",
+                        "fr": "Comptage d'impulsions (absolu) 02",
+                        "it": "Conteggio degli impulsi (assoluto) 02"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "pressure": {
+                    "attributeType": "pressure",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Druck",
+                        "en": "Pressure",
+                        "fr": "Pression",
+                        "it": "Pressione"
+                    },
+                    "isDigital": false,
+                    "unit": "hPa",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "analog_input_01": {
+                    "attributeType": "voltage",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Analoger Eingang 01",
+                        "en": "Analog input 01",
+                        "fr": "Entrée analogique 01",
+                        "it": "Ingresso analogico 01"
+                    },
+                    "isDigital": false,
+                    "unit": "mV",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },    
+            {
+                "analog_input_02": {
+                    "attributeType": "voltage",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Analoger Eingang 02",
+                        "en": "Analog input 02",
+                        "fr": "Entrée analogique 02",
+                        "it": "Ingresso analogico 02"
+                    },
+                    "isDigital": false,
+                    "unit": "mV",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "temperature_external_01": {
+                    "attributeType": "voltage",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "",
+                        "en": "External temperature 01",
+                        "fr": "",
+                        "it": ""
+                    },
+                    "isDigital": false,
+                    "unit": "°C",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "temperature_external_02": {
+                    "attributeType": "voltage",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "",
+                        "en": "External temperature 02",
+                        "fr": "",
+                        "it": ""
+                    },
+                    "isDigital": false,
+                    "unit": "°C",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "digital_input_external_01": {
+                    "attributeType": "inputs-and-switches",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "",
+                        "en": "External digital/button",
+                        "fr": "",
+                        "it": ""
+                    },
+                    "isDigital": true,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            
+            {
+                "digital_input_external_02": {
+                    "attributeType": "inputs-and-switches",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "",
+                        "en": "External digital/button",
+                        "fr": "",
+                        "it": ""
+                    },
+                    "isDigital": true,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "distance_external": {
+                    "attributeType": "inputs-and-switches",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "",
+                        "en": "External distance",
+                        "fr": "",
+                        "it": ""
+                    },
+                    "isDigital": false,
+                    "unit": "mm",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            },
+            {
+                "water_leak_external": {
+                    "attributeType": "level",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Wasserleck (extern)",
+                        "en": "Water leak (external)",
+                        "fr": "Fuite d'eau (externe)",
+                        "it": "Perdita d'acqua (esterna)"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false
+                }
+            }
+        ]
+    }
+}

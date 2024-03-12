@@ -1,0 +1,188 @@
+{
+    "Elsys ERS Eye": {
+        "custom": false,
+        "vendor": "Elsys",
+        "model": "ERS Eye",
+        "translation": {
+            "de": "Elsys ERS Eye Raumbelegungs- und Raumklimasensor",
+            "en": "Elsys ERS Eye Room Occupancy and Indoor Climate Sensor",
+            "fr": "Elsys ERS Eye Capteur d'occupation de la pièce et de climat intérieur",
+            "it": "Elsys ERS Eye Sensore di occupazione e clima interno"
+        },
+        "urldoc": "https://www.elsys.se/en/ers-eye/",
+        "allowedInactivity": null,
+        "icon": "environment",
+        "attributes": [
+            {
+                "temperature": {
+                    "attributeType": "temperature",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Temperatur",
+                        "en": "Temperature",
+                        "fr": "Température",
+                        "it": "Temperatura"
+                    },
+                    "isDigital": false,
+                    "unit": "°C",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "humidity": {
+                    "attributeType": "humidity",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Luftfeuchtigkeit",
+                        "en": "Humidity",
+                        "fr": "Humidité",
+                        "it": "Umidità"
+                    },
+                    "isDigital": false,
+                    "unit": "%",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "brightness": {
+                    "attributeType": "brightness",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Helligkeit",
+                        "en": "Brightness",
+                        "fr": "Luminosité",
+                        "it": "Luminosità"
+                    },
+                    "isDigital": false,
+                    "unit": "Lux",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "motion_count": {
+                    "attributeType": "presence",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Zähler für Bewegungsereignisse",
+                        "en": "Motion event counter",
+                        "fr": "Compteur d'événements de mouvement",
+                        "it": "Contatore di eventi di movimento"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            },
+            {
+                "battery_voltage": {
+                    "attributeType": "battery-voltage",
+                    "subtype": "status",
+                    "translation": {
+                        "de": "Batteriespannung",
+                        "en": "Battery Voltage",
+                        "fr": "Voltage de la batterie",
+                        "it": "Tensione della batteria"
+                    },
+                    "isDigital": false,
+                    "unit": "V",
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": null,
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": false,
+                    "ar": false,
+                    "formula": "battery_voltage / 1000"
+                }
+            },
+            {
+                "occupancy": {
+                    "attributeType": "presence",
+                    "subtype": "input",
+                    "translation": {
+                        "de": "Zustand der Belegung",
+                        "en": "Occupancy state",
+                        "fr": "État de l'occupation",
+                        "it": "Stato di occupazione"
+                    },
+                    "isDigital": false,
+                    "unit": null,
+                    "scale": null,
+                    "zero": null,
+                    "precision": null,
+                    "map": [
+                        {
+                            "value": 0,
+                            "map": "Unoccupied"
+                        },
+                        {
+                            "value": 1,
+                            "map": "Pending"
+                        },
+                        {
+                            "value": 2,
+                            "map": "Occupied"
+                        }
+                    ],
+                    "pipelineMode": "avg",
+                    "pipelineRaster": [
+                        "M15",
+                        "H1",
+                        "DAY"
+                    ],
+                    "viewer": true,
+                    "ar": true
+                }
+            }
+        ]
+    }
+}
