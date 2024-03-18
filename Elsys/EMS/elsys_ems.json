@@ -170,7 +170,7 @@
                     ],
                     "viewer": false,
                     "ar": false,
-                    "formula": "battery_voltage / 1000"
+                    "formula": "{battery_voltage} / 1000"
                 }
             },
             {
