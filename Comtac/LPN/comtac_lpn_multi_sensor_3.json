@@ -1,0 +1,139 @@
+{
+  "LPN Multi-Sensor-3": {
+    "custom": false,
+    "payloadFunction": "LPN_Multi_Sensor_3",
+    "vendor": "Com-t-ac",
+    "model": "Comtac LPN Multisensor-3",
+    "translation": {
+		"de": "Comtac LPN Multisensor-3",
+		"en": "Comtac LPN Multisensor-3",
+		"fr": "Comtac LPN Multisensor-3",
+		"it": "Comtac LPN Multisensore-3"
+    },
+    "urldoc": "https://market.thingpark.com/media//datasheet//_/e/_e1323_technisches_handbuch_ms-3_v0.00.pdf",
+    "allowedInactivity": null,
+    "icon": "environment",
+    "attributes": [
+      {
+        "battery_voltage": {
+          "attributeType": "battery-voltage",
+          "subtype": "status",
+          "translation": {
+            "de": "Batteriespannung",
+            "en": "Battery Voltage",
+			"fr": "Voltage de la batterie",
+			"it": "Tensione della batteria"
+          },
+          "isDigital": false,
+          "unit": "V",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": false,
+          "ar": false,
+          "sourcePath": [
+            "",
+            "voltage"
+          ]
+        }
+      },
+      {
+        "brightness": {
+          "attributeType": "brightness",
+          "subtype": "input",
+          "translation": {
+            "de": "Helligkeit",
+            "en": "Brightness",
+			"fr": "Luminosité",
+			"it": "Luminosità"
+          },
+          "isDigital": false,
+          "unit": "Lux",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "brightness"
+          ]
+        }
+      },
+      {
+        "temperature": {
+          "attributeType": "temperature",
+          "subtype": "input",
+          "translation": {
+            "de": "Temperatur",
+            "en": "Temperature",
+			"fr": "Température",
+			"it": "Temperatura"
+          },
+          "isDigital": false,
+          "unit": "°C",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "temperature"
+          ]
+        }
+      },
+      {
+        "contact": {
+          "attributeType": null,
+          "subtype": "input",
+          "translation": {
+            "de": "Betätigung",
+            "en": "Contact",
+			"fr": "Actionnement",
+			"it": "Azionamento"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "contact"
+          ]
+        }
+      }
+    ]
+  }
+}

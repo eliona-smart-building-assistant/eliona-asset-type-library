@@ -1,0 +1,54 @@
+{
+	"attributes": [
+		{
+			"enable": true,
+			"name": "firmware",
+			"subtype": "info",
+			"translation": {
+				"de": "Firmware",
+				"en": "Firmware"
+			},
+			"type": "device-info"
+		},
+		{
+			"enable": true,
+			"name": "model",
+			"subtype": "info",
+			"translation": {
+				"de": "Modell",
+				"en": "Model"
+			},
+			"type": "device-info"
+		},
+		{
+			"enable": true,
+			"name": "battery_level",
+			"subtype": "status",
+			"translation": {
+				"de": "Batteriestand",
+				"en": "Battery Level"
+			},
+			"type": "battery-voltage",
+			"unit": "%"
+		},
+		{
+			"enable": true,
+			"name": "pos_world",
+			"subtype": "input",
+			"translation": {
+				"de": "Karteposition",
+				"en": "Map Position"
+			},
+			"type": "device-status"
+		}
+	],
+	"custom": true,
+	"icon": "button",
+	"name": "kontakt_io_tag",
+	"translation": {
+		"de": "Kontakt.io Tag",
+		"en": "Kontakt.io Tag"
+	},
+	"urldoc": "https://developer.kontakt.io/docs/dev-ctr-loc-occ-api/affd050d36283-telemetry-data-model",
+	"vendor": "Kontakt.io"
+}

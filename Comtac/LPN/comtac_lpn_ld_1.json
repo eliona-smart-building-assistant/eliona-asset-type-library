@@ -1,0 +1,79 @@
+{
+  "LPN LD-1": {
+    "custom": false,
+    "payloadFunction": "LPN_Level_Detector",
+    "vendor": "Com-t-ac",
+    "model": "Comtac LPN LD-1 Füllstand Sensor",
+    "translation": {
+		"de": "Comtac LPN LD-1 Füllstand Sensor",
+		"en": "Comtac LPN LD-1 Level Sensor",
+		"fr": "Capteur de niveau Comtac LPN LD-1",
+		"it": "Sensore di livello Comtac LPN LD-1"
+    },
+    "urldoc": "https://www.comtac.ch/de/produkte/lora/condition-monitoring/lpn-ld-1.html",
+    "allowedInactivity": null,
+    "icon": "filling",
+    "attributes": [
+      {
+        "battery_voltage": {
+          "attributeType": "battery-voltage",
+          "subtype": "status",
+          "translation": {
+            "de": "Batteriespannung",
+            "en": "Battery Voltage",
+			"fr": "Voltage de la batterie",
+			"it": "Tensione della batteria"
+          },
+          "isDigital": false,
+          "unit": "V",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": false,
+          "ar": false,
+          "sourcePath": [
+            "",
+            "voltage"
+          ]
+        }
+      },
+      {
+        "fill_level": {
+          "attributeType": "level",
+          "subtype": "input",
+          "translation": {
+            "de": "Füllstandhöhe",
+            "en": "Fill level",
+			"fr": "Niveau de remplissage",
+			"it": "Altezza del livello"
+          },
+          "isDigital": false,
+          "unit": "mm",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "level"
+          ]
+        }
+      }
+    ]
+  }
+}

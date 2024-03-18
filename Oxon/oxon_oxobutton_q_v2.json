@@ -1,0 +1,131 @@
+{
+  "Oxobutton V2": {
+    "custom": false,
+    "payloadFunction": "Oxon",
+    "vendor": "Oxon",
+    "model": "Oxobutton Q LoRaWan V2",
+    "translation": {
+		"de": "Oxo-Smartbutton / FW V.2 (LoRa/BLE).",
+		"en": "Oxo-Smartbutton / FW V.2 (LoRa/BLE).",
+		"fr": "Oxo-Smartbutton / FW V.2 (LoRa/BLE).",
+		"it": "Oxo-Smartbutton / FW V.2 (LoRa/BLE)."
+    },
+    "urldoc": "https://oxobutton.ch/products/oxobutton-lorawan",
+    "allowedInactivity": null,
+    "icon": "button",
+    "attributes": [
+      {
+        "battery_level": {
+          "attributeType": "battery-voltage",
+          "subtype": "status",
+          "translation": {
+            "de": "Batteriestand",
+            "en": "Battery Level",
+			"fr": "Niveau de la batterie",
+			"it": "Livello della batteria"
+          },
+          "isDigital": false,
+          "unit": "%",
+          "scale": null,
+          "zero": null,
+          "precision": 2,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": false,
+          "ar": false,
+          "sourcePath": [
+            "payload",
+            "battery_load"
+          ]
+        }
+      },
+      {
+        "image": {
+          "attributeType": "device-info",
+          "subtype": "input",
+          "translation": {
+            "de": "Bild",
+            "en": "Image",
+			"fr": "Image",
+			"it": "Immagine"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "payload",
+            "image_code"
+          ]
+        }
+      },
+      {
+        "contact": {
+          "attributeType": "inputs-and-switches",
+          "subtype": "input",
+          "translation": {
+            "de": "Betätigung",
+            "en": "Contact",
+			"fr": "Actionnement",
+			"it": "Azionamento"
+          },
+          "isDigital": true,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "payload",
+            "button_id"
+          ]
+        }
+      },
+      {
+        "life_signs": {
+          "attributeType": "operating-status",
+          "subtype": "input",
+          "translation": {
+            "de": "Lebenszeichen",
+            "en": "Life signs",
+			"fr": "Signes de vie",
+			"it": "Segni di vita"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "payload",
+            "heartbeat"
+          ]
+        }
+      }
+    ]
+  }
+}

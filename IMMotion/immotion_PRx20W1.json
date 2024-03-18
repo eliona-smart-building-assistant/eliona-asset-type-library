@@ -1,0 +1,139 @@
+{
+  "People Count PRx20W1": {
+    "custom": false,
+    "payloadFunction": "PRx20W1",
+    "vendor": "IMMotion",
+    "model": "SDI Wireless People Counter PRx20W1",
+    "translation": {
+		"de": "PRx20W1 Bidirektionaler Personenzähler.",
+		"en": "PRx20W1 Bi-Directional People Counter.",
+		"fr": "PRx20W1 Compteur de personnes bidirectionnel.",
+		"it": "PRx20W1 Contapersone bidirezionale."
+    },
+    "urldoc": "https://www.sdinternational.nl/people-counter/bi-directional-wireless-people-counter/",
+    "allowedInactivity": null,
+    "icon": "people",
+    "attributes": [
+      {
+        "battery_voltage": {
+          "attributeType": "battery-voltage",
+          "subtype": "status",
+          "translation": {
+            "de": "Batteriespannung",
+            "en": "Battery Voltage",
+			"fr": "Voltage de la batterie",
+			"it": "Tensione della batteria"
+          },
+          "isDigital": false,
+          "unit": "V",
+          "scale": null,
+          "zero": null,
+          "precision": 2,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": false,
+          "ar": false,
+          "sourcePath": [
+            "payload",
+            "voltage"
+          ]
+        }
+      },
+      {
+        "battery_level": {
+          "attributeType": "battery-voltage",
+          "subtype": "status",
+          "translation": {
+            "de": "Batteriestand",
+            "en": "Battery Level",
+			"fr": "Niveau de la batterie",
+			"it": "Livello della batteria"
+          },
+          "isDigital": false,
+          "unit": "%",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": false,
+          "ar": false,
+          "sourcePath": [
+            "payload",
+            "battery_status"
+          ]
+        }
+      },
+      {
+        "left_to_right_counter": {
+          "attributeType": "people-count",
+          "subtype": "input",
+          "translation": {
+            "de": "Zähler Links-nach-Rechts",
+            "en": "Counter left-to-right",
+			"fr": "Compteur de gauche à droite",
+			"it": "Contatore da sinistra a destra"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "sum",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "payload",
+            "LTR"
+          ]
+        }
+      },
+      {
+        "right_to_left_counter": {
+          "attributeType": "people-count",
+          "subtype": "input",
+          "translation": {
+            "de": "Zähler Rechts-nach-Links",
+            "en": "Counter right-to-left",
+			"fr": "Compteur de droite à gauche",
+			"it": "Contatore da destra a sinistra"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "sum",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "payload",
+            "RTL"
+          ]
+        }
+      }
+    ]
+  }
+}

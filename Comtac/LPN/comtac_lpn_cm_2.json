@@ -1,0 +1,109 @@
+{
+  "LPN CM-2": {
+    "custom": false,
+    "payloadFunction": "LPN_Condition_Monitoring_2",
+    "vendor": "Com-t-ac",
+    "model": "Comtac LPN CM-2 Klimasensor",
+    "translation": {
+		"de": "Comtac LPN CM-2 Klimasensor",
+		"en": "Comtac LPN CM-2 Climate sensor",
+		"fr": "Comtac LPN CM-2 Capteur de climat",
+		"it": "Sensore climatico Comtac LPN CM-2"
+    },
+    "urldoc": "https://www.eps-energy.com/wp-content/uploads/2019/03/E1364-technical-datasheet-LPN-CM-2-EN-V0.20.pdf",
+    "allowedInactivity": null,
+    "icon": "environment",
+    "attributes": [
+      {
+        "battery_voltage": {
+          "attributeType": "battery-voltage",
+          "subtype": "status",
+          "translation": {
+            "de": "Batteriespannung",
+            "en": "Battery Voltage",
+			"fr": "Voltage de la batterie",
+			"it": "Tensione della batteria"
+          },
+          "isDigital": false,
+          "unit": "V",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": false,
+          "ar": false,
+          "sourcePath": [
+            "",
+            "voltage"
+          ]
+        }
+      },
+      {
+        "temperature": {
+          "attributeType": "temperature",
+          "subtype": "input",
+          "translation": {
+            "de": "Temperatur",
+            "en": "Temperature",
+			"fr": "Température",
+			"it": "Temperatura"
+          },
+          "isDigital": false,
+          "unit": "°C",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "temperature"
+          ]
+        }
+      },
+      {
+        "current": {
+          "attributeType": null,
+          "subtype": "input",
+          "translation": {
+            "de": "Stromstärke",
+            "en": "Current",
+			"fr": "Courant électrique",
+			"it": "Amperaggio"
+          },
+          "isDigital": false,
+          "unit": "A",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "current"
+          ]
+        }
+      }
+    ]
+  }
+}

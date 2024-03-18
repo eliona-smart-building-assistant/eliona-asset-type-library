@@ -1,0 +1,105 @@
+{
+  "LPN DI-SO": {
+    "custom": false,
+    "payloadFunction": "LPN_Digital_Input",
+    "vendor": "Com-t-ac",
+    "model": "Comtac LPN DI/SO Digital Input",
+    "translation": {
+		"de": "Comtac LPN DI/SO Digitaler Eingang",
+		"en": "Comtac LPN DI/SO Digital Input",
+		"fr": "Entrée numérique Comtac LPN DI/SO",
+		"it": "Ingresso digitale Comtac LPN DI/SO"
+    },
+    "urldoc": "https://www.eps-energy.com/wp-content/uploads/2019/03/E1347-technical-datasheet-LPN-S0-DI-EN-V0.10.pdf",
+    "allowedInactivity": null,
+    "icon": "gateway",
+    "attributes": [
+      {
+        "digital_input_01": {
+          "attributeType": "operating-status",
+          "subtype": "input",
+          "translation": {
+            "de": "Eingang 1",
+            "en": "Input 1",
+			"fr": "Entrée 1",
+			"it": "Ingresso 1"
+          },
+          "isDigital": true,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "di1"
+          ]
+        }
+      },
+      {
+        "digital_input_02": {
+          "attributeType": "operating-status",
+          "subtype": "input",
+          "translation": {
+            "de": "Eingang 2",
+            "en": "Input 2",
+			"fr": "Entrée 2",
+			"it": "Ingresso 2"
+          },
+          "isDigital": true,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "di2"
+          ]
+        }
+      },
+      {
+        "power_supply_missing": {
+          "attributeType": null,
+          "subtype": "input",
+          "translation": {
+            "de": "Fehlende Speisung",
+            "en": "Missing Power Supply",
+			"fr": "Alimentation électrique manquante",
+			"it": "Alimentazione mancante"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "supply_error"
+          ]
+        }
+      }
+    ]
+  }
+}

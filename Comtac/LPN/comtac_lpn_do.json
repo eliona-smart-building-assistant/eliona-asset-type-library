@@ -1,0 +1,177 @@
+{
+  "LPN DO": {
+    "custom": false,
+    "payloadFunction": "LPN_Digital_Output",
+    "vendor": "Com-t-ac",
+    "model": "Comtac LPN DO Digital Output",
+    "translation": {
+		"de": "Comtac LPN DO Digitaler Ausgang",
+		"en": "Comtac LPN DO Digital Output",
+		"fr": "Sortie numérique Comtac LPN DO",
+		"it": "Uscita digitale Comtac LPN DO"
+    },
+    "urldoc": "https://www.eps-energy.com/wp-content/uploads/2019/03/E1347-technical-datasheet-LPN-DO-EN-V0.10.pdf",
+    "allowedInactivity": null,
+    "icon": "gateway",
+    "attributes": [
+      {
+        "output_1_feedback": {
+          "attributeType": "operating-status",
+          "subtype": "input",
+          "translation": {
+            "de": "Rückmeldung Ausgang 1",
+            "en": "Feedback Output 1",
+			"fr": "Sortie de rétroaction 1",
+			"it": "Uscita di feedback 1"
+          },
+          "isDigital": true,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "do1"
+          ]
+        }
+      },
+      {
+        "digital_output_01": {
+          "attributeType": "operating-status",
+          "subtype": "output",
+          "translation": {
+            "de": "Ausgang 1",
+            "en": "Output 1",
+			"fr": "Sortie 1",
+			"it": "Uscita 1"
+          },
+          "isDigital": true,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": false,
+          "ar": false,
+          "sourcePath": null
+        }
+      },
+      {
+        "digital_output_02": {
+          "attributeType": "operating-status",
+          "subtype": "output",
+          "translation": {
+            "de": "Ausgang 2",
+            "en": "Output 2",
+			"fr": "Sortie 2",
+			"it": "Uscita 2"
+          },
+          "isDigital": true,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": false,
+          "ar": false,
+          "sourcePath": null
+        }
+      },
+      {
+        "digital_output_01_error": {
+          "attributeType": null,
+          "subtype": "input",
+          "translation": {
+            "de": "Fehler Ausgang 1",
+            "en": "Error Output 1",
+			"fr": "Sortie d'erreur 1",
+			"it": "Uscita di errore 1"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "do1_error"
+          ]
+        }
+      },
+      {
+        "digital_output_02_error": {
+          "attributeType": null,
+          "subtype": "input",
+          "translation": {
+            "de": "Fehler Ausgang 2",
+            "en": "Error Output 2",
+			"fr": "Sortie d'erreur 2",
+			"it": "Uscita di errore 2"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "do2_error"
+          ]
+        }
+      },
+      {
+        "digital_output_02_feedback": {
+          "attributeType": "operating-status",
+          "subtype": "input",
+          "translation": {
+            "de": "Rückmeldung Ausgang 2",
+            "en": " Feedback Output 2",
+			"fr": "Sortie de rétroaction 2",
+			"it": "Uscita di feedback 2"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "do2"
+          ]
+        }
+      }
+    ]
+  }
+}

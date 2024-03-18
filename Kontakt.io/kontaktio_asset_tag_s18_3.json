@@ -1,0 +1,65 @@
+{
+  "Asset Tag S18-3": {
+    "custom": false,
+    "payloadFunction": null,
+    "vendor": "kontakt.io",
+    "model": "Kontakt.io Asset Tag S18-3",
+    "translation": {
+      "de": "Kontakt.io Asset Tag S18-3",
+	  "en": "Kontakt.io Asset Tag S18-3",
+	  "fr": "Kontakt.io Asset Tag S18-3",
+	  "it": "Kontakt.io Asset Tag S18-3"
+    },
+    "urldoc": "https://store.kontakt.io/product/asset-tag/",
+    "allowedInactivity": null,
+    "icon": null,
+    "attributes": [
+      {
+        "asset_id": {
+          "attributeType": "device-info",
+          "subtype": "input",
+          "translation": {
+            "de": "Das nächste Gateway",
+			"en": "The next Gateway",
+			"fr": "La prochaine passerelle",
+			"it": "Il prossimo Gateway"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": true,
+          "ar": true,
+          "sourcePath": null
+        }
+      },
+      {
+        "world_position": {
+          "attributeType": "device-info",
+          "subtype": "input",
+          "translation": {
+            "de": "Position im Raum",
+			"en": "Position in the room",
+			"fr": "Position dans la salle",
+			"it": "Posizione nella stanza"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": true,
+          "ar": true,
+          "sourcePath": null
+        }
+      }
+    ]
+  }
+}

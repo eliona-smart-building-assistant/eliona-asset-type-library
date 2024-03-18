@@ -1,0 +1,49 @@
+{
+  "Bosch Parking": {
+    "custom": false,
+    "payloadFunction": "PLS",
+    "vendor": "Boschparking",
+    "model": "Bosch Parking Sensor",
+    "translation": {
+		"de": "Bosch Parksensor PLS",
+		"en": "Bosch parking sensor PLS",
+		"fr": "Capteur de stationnement Bosch PLS",
+		"it": "Sensore di parcheggio Bosch PLS"
+    },
+    "urldoc": "https://lora-alliance.org/wp-content/uploads/2019/07/parking-lot-sensor-datasheet.pdf",
+    "allowedInactivity": null,
+    "icon": "parking",
+    "attributes": [
+      {
+        "occupancy": {
+          "attributeType": "vehicle-detector",
+          "subtype": "input",
+          "translation": {
+            "de": "Belegung",
+            "en": "Occupancy",
+			"fr": "Occupation",
+			"it": "Occupazione"
+          },
+          "isDigital": true,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "payload",
+            "occupied"
+          ]
+        }
+      }
+    ]
+  }
+}

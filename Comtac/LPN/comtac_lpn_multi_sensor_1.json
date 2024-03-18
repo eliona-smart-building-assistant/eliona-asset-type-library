@@ -1,0 +1,139 @@
+{
+  "LPN Multi-Sensor-1": {
+    "custom": false,
+    "payloadFunction": "LPN_Multi_Sensor_1",
+    "vendor": "Com-t-ac",
+    "model": "Comtac LPN Multisensor-1",
+    "translation": {
+		"de": "Comtac LPN Multisensor-1",
+		"en": "Comtac LPN Multisensor-1",
+		"fr": "Comtac LPN Multisensor-1",
+		"it": "Comtac LPN Multisensore-1"
+    },
+    "urldoc": "https://www.comtac.ch/de/produkte/lora/multi-sensoren/lpn-multi-sensor-1.html",
+    "allowedInactivity": null,
+    "icon": "environment",
+    "attributes": [
+      {
+        "battery_voltage": {
+          "attributeType": "battery-voltage",
+          "subtype": "status",
+          "translation": {
+            "de": "Batteriespannung",
+            "en": "Battery Voltage",
+			"fr": "Voltage de la batterie",
+			"it": "Tensione della batteria"
+          },
+          "isDigital": false,
+          "unit": "V",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": false,
+          "ar": false,
+          "sourcePath": [
+            "",
+            "voltage"
+          ]
+        }
+      },
+      {
+        "brightness": {
+          "attributeType": "brightness",
+          "subtype": "input",
+          "translation": {
+            "de": "Helligkeit",
+            "en": "Brightness",
+			"fr": "Luminosité",
+			"it": "Luminosità"
+          },
+          "isDigital": false,
+          "unit": "Lux",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "brightness"
+          ]
+        }
+      },
+      {
+        "humidity": {
+          "attributeType": "humidity",
+          "subtype": "input",
+          "translation": {
+            "de": "Luftfeuchtigkeit",
+            "en": "Humidity",
+			"fr": "Humidité",
+			"it": "Umidità"
+          },
+          "isDigital": false,
+          "unit": "%",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "humidity"
+          ]
+        }
+      },
+      {
+        "temperature": {
+          "attributeType": "temperature",
+          "subtype": "input",
+          "translation": {
+            "de": "Temperatur",
+            "en": "Temperature",
+			"fr": "Température",
+			"it": "Temperatura"
+          },
+          "isDigital": false,
+          "unit": "°C",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "temperature"
+          ]
+        }
+      }
+    ]
+  }
+}

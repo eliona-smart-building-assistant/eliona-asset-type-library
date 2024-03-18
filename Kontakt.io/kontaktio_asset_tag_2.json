@@ -1,0 +1,65 @@
+{
+	"attributes": [
+		{
+			"enable": true,
+			"name": "firmware",
+			"subtype": "info",
+			"translation": {
+				"de": "Firmware",
+				"en": "Firmware"
+			},
+			"type": "device-info"
+		},
+		{
+			"enable": true,
+			"name": "model",
+			"subtype": "info",
+			"translation": {
+				"de": "Modell",
+				"en": "Model"
+			},
+			"type": "device-info"
+		},
+		{
+			"enable": true,
+			"name": "battery_level",
+			"subtype": "status",
+			"translation": {
+				"de": "Batteriestand",
+				"en": "Battery Level"
+			},
+			"type": "battery-voltage",
+			"unit": "%"
+		},
+		{
+			"enable": true,
+			"name": "pos_world",
+			"subtype": "input",
+			"translation": {
+				"de": "Karteposition",
+				"en": "Map Position"
+			},
+			"type": "device-status"
+		},
+		{
+			"enable": true,
+			"name": "temperature",
+			"subtype": "input",
+			"translation": {
+				"de": "Temperatur",
+				"en": "Temperature"
+			},
+			"type": "temperature",
+			"unit": "˚C"
+		}
+	],
+	"custom": true,
+	"icon": "button",
+	"name": "kontakt_io_badge",
+	"translation": {
+		"de": "Kontakt.io Smart Badge",
+		"en": "Kontakt.io Smart Badge"
+	},
+	"urldoc": "https://developer.kontakt.io/docs/dev-ctr-loc-occ-api/affd050d36283-telemetry-data-model",
+	"vendor": "Kontakt.io"
+}

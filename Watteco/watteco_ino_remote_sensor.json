@@ -1,0 +1,79 @@
+{
+  "InO": {
+    "custom": false,
+    "payloadFunction": "Ino",
+    "vendor": "Nke Watteco",
+    "model": "Watteco Ino Remote Sensor",
+    "translation": {
+		"de": "Watteco Ino Sensor",
+        "en": "Watteco Ino Sensor",
+		"fr": "Capteur Ino de Watteco",
+		"it": "Sensore Watteco Ino"
+    },
+    "urldoc": "https://www.watteco.com/product/ino-sensor-lorawan/",
+    "allowedInactivity": null,
+    "icon": "power",
+    "attributes": [
+      {
+        "contact": {
+          "attributeType": "operating-status",
+          "subtype": "input",
+          "translation": {
+            "de": "Betätigung",
+            "en": "Contact",
+			"fr": "Actionnement",
+			"it": "Azionamento"
+          },
+          "isDigital": true,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "payload",
+            "pin_state"
+          ]
+        }
+      },
+      {
+        "counter": {
+          "attributeType": null,
+          "subtype": "input",
+          "translation": {
+            "de": "Zähler",
+            "en": "Counter",
+			"fr": "Contre",
+			"it": "Contatore"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "payload",
+            "counter"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "LPN IR-Head": {
+    "custom": false,
+    "payloadFunction": "LPN_IR_Head",
+    "vendor": "Com-t-ac",
+    "model": "Comtac Klax IR-Head Stromzähler",
+    "translation": {
+		"de": "Comtac Klax IR-Stromzähler",
+		"en": "Comtac Klax IR electricity meter",
+		"fr": "Compteur d'électricité Comtac Klax IR",
+		"it": "Contatore elettrico Comtac Klax IR"
+    },
+    "urldoc": "https://lora-alliance.org/lora_products/klax/",
+    "allowedInactivity": null,
+    "icon": "power",
+    "attributes": [
+      {
+        "device_id": {
+          "attributeType": "device-info",
+          "subtype": "info",
+          "translation": {
+            "de": "Geräte ID",
+            "en": "Device ID",
+			"fr": "ID du dispositif",
+			"it": "ID dispositivo"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": false,
+          "ar": false,
+          "sourcePath": [
+            "",
+            "meter"
+          ]
+        }
+      },
+      {
+        "power": {
+          "attributeType": "power",
+          "subtype": "input",
+          "translation": {
+            "de": "Leistung",
+            "en": "Power",
+			"fr": "Puissance",
+			"it": "Potenza"
+          },
+          "isDigital": false,
+          "unit": "kW",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "slot_0"
+          ]
+        }
+      },
+      {
+        "energy_hf": {
+          "attributeType": "energy",
+          "subtype": "input",
+          "translation": {
+            "de": "Energie HF",
+            "en": "Energy HF",
+			"fr": "Énergie HF",
+			"it": "Energia HF"
+          },
+          "isDigital": false,
+          "unit": "kWh",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "cusum",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "slot_2"
+          ]
+        }
+      },
+      {
+        "energy_tf": {
+          "attributeType": "energy",
+          "subtype": "input",
+          "translation": {
+            "de": "Energie TF",
+            "en": "Energy TF",
+			"fr": "Énergie TF",
+			"it": "Energia TF"
+          },
+          "isDigital": false,
+          "unit": "kWh",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "cusum",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "slot_3"
+          ]
+        }
+      },
+      {
+        "energy": {
+          "attributeType": "energy",
+          "subtype": "input",
+          "translation": {
+            "de": "Energie",
+            "en": "Energy",
+			"fr": "Énergie",
+			"it": "Energia"
+          },
+          "isDigital": false,
+          "unit": "kWh",
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "slot_1"
+          ]
+        }
+      }
+    ]
+  }
+}

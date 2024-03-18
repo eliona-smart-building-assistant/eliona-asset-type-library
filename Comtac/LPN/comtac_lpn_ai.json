@@ -1,0 +1,131 @@
+{
+  "LPN AI": {
+    "custom": false,
+    "payloadFunction": "LPN_Analog_Input",
+    "vendor": "Com-t-ac",
+    "model": "Comtac LPN AI Analog Input",
+    "translation": {
+		"de": "Comtac LPN AI Analogeingang",
+		"en": "Comtac LPN AI Analog Input",
+		"fr": "Comtac LPN AI Entrée analogique",
+		"it": "Ingresso analogico Comtac LPN AI"
+    },
+    "urldoc": "https://www.eps-energy.com/wp-content/uploads/2019/11/E1347-technical-datasheet-LPN-AI-EN-V1.00.pdf",
+    "allowedInactivity": null,
+    "icon": "power",
+    "attributes": [
+      {
+        "measure_type_01": {
+          "attributeType": "device-info",
+          "subtype": "info",
+          "translation": {
+            "de": "Messtyp 1",
+            "en": "Measure Type 1",
+			"fr": "Type de mesure 1",
+			"it": "Tipo di misura 1"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": false,
+          "ar": false,
+          "sourcePath": [
+            "",
+            "ai1_type"
+          ]
+        }
+      },
+      {
+        "measure_type_02": {
+          "attributeType": "device-info",
+          "subtype": "info",
+          "translation": {
+            "de": "Messtyp 2",
+            "en": "Measure Type 2",
+			"fr": "Type de mesure 2",
+			"it": "Tipo di misura 2"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": null,
+          "pipelineRaster": null,
+          "viewer": false,
+          "ar": false,
+          "sourcePath": [
+            "",
+            "ai2_type"
+          ]
+        }
+      },
+      {
+        "analog_input_01": {
+          "attributeType": "operating-status",
+          "subtype": "input",
+          "translation": {
+            "de": "Eingang 1",
+            "en": "Input 1",
+			"fr": "Entrée 1",
+			"it": "Ingresso 1"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "ai1"
+          ]
+        }
+      },
+      {
+        "analog_input_02": {
+          "attributeType": "operating-status",
+          "subtype": "input",
+          "translation": {
+            "de": "Eingang 2",
+            "en": "Input 2",
+			"fr": "Entrée 2",
+			"it": "Ingresso 2"
+          },
+          "isDigital": false,
+          "unit": null,
+          "scale": null,
+          "zero": null,
+          "precision": null,
+          "map": null,
+          "pipelineMode": "avg",
+          "pipelineRaster": [
+            "M15",
+            "H1",
+            "DAY"
+          ],
+          "viewer": true,
+          "ar": true,
+          "sourcePath": [
+            "",
+            "ai2"
+          ]
+        }
+      }
+    ]
+  }
+}
